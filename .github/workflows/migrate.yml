@@ -21,4 +21,5 @@ jobs:
       - name: Run Alembic
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          BASE_URL: ${{secrets.BASE_URL}}
         run: alembic upgrade head
